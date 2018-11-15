@@ -3,7 +3,7 @@ const bot1 = new Discord.Client();
 const ID = '505101712839671838';
 
 bot1.on('ready', () => {
-  console.log(`Logged in as ${bot1.user.username} ${bot2.user.username} ${bot3.user.username}`);
+  console.log(`Starting....`);
 });
 
 
