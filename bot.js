@@ -18,7 +18,7 @@ bot1.on('message', message => {
 bot1.on('message', message => {
   if(message.content.startsWith(`f-r`)){
     if(message.author.id !== ID) return;
-    message.channel.send('#rep');
+    message.channel.send('#rep <@505101712839671838>');
   }
 });
 
@@ -58,7 +58,7 @@ bot2.on('message', message => {
 bot2.on('message', message => {
   if(message.content.startsWith(`f-r`)){
     if(message.author.id !== ID) return;
-    message.channel.send('#rep');
+    message.channel.send('#rep <@505101712839671838>');
   }
 });
 
@@ -98,7 +98,7 @@ bot3.on('message', message => {
 bot3.on('message', message => {
   if(message.content.startsWith(`f-r`)){
     if(message.author.id !== ID) return;
-    message.channel.send('#rep');
+    message.channel.send('#rep <@505101712839671838>');
   }
 });
 
