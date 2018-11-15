@@ -45,6 +45,8 @@ bot1.on('message', message => {
 bot1.login(process.env.FB1)
 //////////////////////////////////////////////////////////
 
+const bot2 = new Discord.Client();
+
 bot2.on('message', message => {
   if(message.content.startsWith(`f-d`)){
     if(message.author.id !== ID) return;
@@ -82,6 +84,8 @@ bot2.on('message', message => {
 
 bot2.login(process.env.FB2)
 //////////////////////////////////////////////////////////
+
+const bot3 = new Discord.Client();
 
 bot3.on('message', message => {
   if(message.content.startsWith(`f-d`)){
