@@ -3,7 +3,7 @@ const bot1 = new Discord.Client();
 const ID = '505101712839671838';
 
 bot1.on('ready', () => {
-  console.log(`Logged in as ${bot1.user.username}\n ${bot2.user.username}\n ${bot3.user.username}`);
+  console.log(`Logged in as ${bot1.user.username} ${bot2.user.username} ${bot3.user.username}`);
 });
 
 
@@ -24,7 +24,7 @@ bot1.on('message', message => {
 
 
 bot1.on('ready', () => {
-  let c = "510731897396002836";
+  let c = bot1.guilds.get("510731897396002836").channels.find(c => c.id == "510731897396002836");
   setInterval(function() {
     c.send("1st Lover")
   }, 900);
@@ -64,7 +64,7 @@ bot2.on('message', message => {
 
 
 bot2.on('ready', () => {
-  let c = "510731897396002836";
+  let c = bot2.guilds.get("510731897396002836").channels.find(c => c.id == "510731897396002836");
   setInterval(function() {
     c.send("2nd Lover")
   }, 900);
@@ -104,7 +104,7 @@ bot3.on('message', message => {
 
 
 bot3.on('ready', () => {
-  let c = "510731897396002836";
+  let c = bot3.guilds.get("510731897396002836").channels.find(c => c.id == "510731897396002836");
   setInterval(function() {
     c.send("3rd Lover")
   }, 900);
