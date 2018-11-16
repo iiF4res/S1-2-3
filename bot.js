@@ -35,7 +35,7 @@ bot1.on('message', message => {
   if(message.author.bot) return;
   let args = message.content.split(" ").slice(1);
   if(!args) return message.channel.send(`:angry: | What do you want us to say?`);
-  if(message.content.startsWith(`f-s`)){
+  if(message.content.startsWith(`f1`)){
     if(message.author.id !== ID) return;
     message.channel.send(args.join(" ")).then(msg => msg.delete(3000));
   }
@@ -75,7 +75,7 @@ bot2.on('message', message => {
   if(message.author.bot) return;
   let args = message.content.split(" ").slice(1);
   if(!args) return message.channel.send(`:angry: | What do you want us to say?`);
-  if(message.content.startsWith(`f-s`)){
+  if(message.content.startsWith(`f2`)){
     if(message.author.id !== ID) return;
     message.channel.send(args.join(" ")).then(msg => msg.delete(3000));
   }
@@ -115,7 +115,7 @@ bot3.on('message', message => {
   if(message.author.bot) return;
   let args = message.content.split(" ").slice(1);
   if(!args) return message.channel.send(`:angry: | What do you want us to say?`);
-  if(message.content.startsWith(`f-s`)){
+  if(message.content.startsWith(`f3`)){
     if(message.author.id !== ID) return;
     message.channel.send(args.join(" ")).then(msg => msg.delete(3000));
   }
