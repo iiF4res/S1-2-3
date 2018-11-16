@@ -10,7 +10,7 @@ bot1.on('ready', () => {
 bot1.on('message', message => {
   if(message.content.startsWith(`f-d`)){
     if(message.author.id !== ID) return;
-    message.channel.send('#daily');
+    message.channel.send('#daily').then(msg => msg.delete(3000));
   }
 });
 
@@ -18,7 +18,7 @@ bot1.on('message', message => {
 bot1.on('message', message => {
   if(message.content.startsWith(`f-r`)){
     if(message.author.id !== ID) return;
-    message.channel.send('#rep <@505101712839671838>');
+    message.channel.send('#rep <@505101712839671838>').then(msg => msg.delete(3000));
   }
 });
 
@@ -37,7 +37,7 @@ bot1.on('message', message => {
   if(!args) return message.channel.send(`:angry: | What do you want us to say?`);
   if(message.content.startsWith(`f-s`)){
     if(message.author.id !== ID) return;
-    message.channel.send(args.join(" "))
+    message.channel.send(args.join(" ")).then(msg => msg.delete(3000));
   }
 });
 
@@ -50,7 +50,7 @@ const bot2 = new Discord.Client();
 bot2.on('message', message => {
   if(message.content.startsWith(`f-d`)){
     if(message.author.id !== ID) return;
-    message.channel.send('#daily');
+    message.channel.send('#daily').then(msg => msg.delete(3000));
   }
 });
 
@@ -58,7 +58,7 @@ bot2.on('message', message => {
 bot2.on('message', message => {
   if(message.content.startsWith(`f-r`)){
     if(message.author.id !== ID) return;
-    message.channel.send('#rep <@505101712839671838>');
+    message.channel.send('#rep <@505101712839671838>').then(msg => msg.delete(3000));
   }
 });
 
@@ -77,7 +77,7 @@ bot2.on('message', message => {
   if(!args) return message.channel.send(`:angry: | What do you want us to say?`);
   if(message.content.startsWith(`f-s`)){
     if(message.author.id !== ID) return;
-    message.channel.send(args.join(" "))
+    message.channel.send(args.join(" ")).then(msg => msg.delete(3000));
   }
 });
 
@@ -90,7 +90,7 @@ const bot3 = new Discord.Client();
 bot3.on('message', message => {
   if(message.content.startsWith(`f-d`)){
     if(message.author.id !== ID) return;
-    message.channel.send('#daily');
+    message.channel.send('#daily').then(msg => msg.delete(3000));
   }
 });
 
@@ -98,7 +98,7 @@ bot3.on('message', message => {
 bot3.on('message', message => {
   if(message.content.startsWith(`f-r`)){
     if(message.author.id !== ID) return;
-    message.channel.send('#rep <@505101712839671838>');
+    message.channel.send('#rep <@505101712839671838>').then(msg => msg.delete(3000));
   }
 });
 
@@ -117,7 +117,7 @@ bot3.on('message', message => {
   if(!args) return message.channel.send(`:angry: | What do you want us to say?`);
   if(message.content.startsWith(`f-s`)){
     if(message.author.id !== ID) return;
-    message.channel.send(args.join(" "))
+    message.channel.send(args.join(" ")).then(msg => msg.delete(3000));
   }
 });
 
